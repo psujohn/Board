@@ -1,4 +1,7 @@
 Board::Application.routes.draw do
+  get "pages/home"
+  get "pages/about"
+  
   resources :people
 
   # The priority is based upon order of creation:
