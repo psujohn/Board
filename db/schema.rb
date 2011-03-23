@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(:version => 20110322200640) do
 
-# Could not dump table "people" because of following ArgumentError
-#   invalid date
+  create_table "people", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
